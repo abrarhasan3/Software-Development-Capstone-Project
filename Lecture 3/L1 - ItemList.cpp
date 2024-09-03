@@ -4,17 +4,17 @@ using namespace std;
 void start()
 {
         #ifndef ONLINE_JUDGE
- 
+
         freopen("C:\\Users\\Hp\\Desktop\\CP\\input.txt", "r", stdin);
- 
+
         freopen("C:\\Users\\Hp\\Desktop\\CP\\output.txt", "w", stdout);
         #endif // ONLINE_JUDGE
- 
+
 }
- 
+
 int main()
 {
-        start();
+        //start();
 //-------------------L1-----------------------------//
 
         // int a[10];
@@ -28,9 +28,9 @@ int main()
         //         printf("%d\n", a[i]);
         // }
 
-        
 
-        
+
+
 
         // // for(int i=0;i<4;i++)
         // // {
@@ -39,67 +39,66 @@ int main()
 
 
 
-        // int foodItems[3] = {10,20,30};
-
-        // int error=1;
-
-        // while(error)
-        // {
-        //         printf("Please enter 1 for pizza\n2 for Burger\n3 For Cold Drinks\n");
-        //         int choice;
-        //         scanf("%d", &choice);
+        int foodItems[3] = {10,20,30};
 
 
-        //         printf("Enter Quantity : ");
-        //                 int quantity;
-        //                 scanf("%d", &quantity);
 
-        //         if(choice==1)
-        //         {
-                        
-
-        //                 foodItems[0] = foodItems[0]-quantity;
-
-        //         }
-        //         else if(choice==2)
-        //         {
-        //                 foodItems[1] = foodItems[1]-quantity;
-
-        //         }
-        //         else if(choice==3)
-        //         {
-                        
-        //                 foodItems[2] = foodItems[2]-quantity;
-
-        //         }
-        //         else
-        //         {
-        //                 printf("Error Input");
-        //         }
-
-        //         printf("Remaining Inventry: ")
-
-        //         for(int i=0;i<3;i++)
-        //         {
-        //                 printf("%d ", foodItems[i]);
-        //         }
-        //         printf("\n");
-        // }
-
-        char item[3][10];
-
-        for(int i=0;i<3;i++)
+        while(1)
         {
-                scanf("%s", &item[i]);
+                printf("Please enter 1 for pizza\n2 for Burger\n3 For Cold Drinks\n");
+                int choice;
+                scanf("%d", &choice);
 
-                printf("%s\n",item[i] );
+
+                printf("Enter Quantity : ");
+                int quantity;
+                scanf("%d", &quantity);
+
+                if(choice==1)
+                {
+
+
+                        foodItems[0] = foodItems[0]-quantity;
+
+
+
+                }
+                else if(choice==2)
+                {
+                        foodItems[1] = foodItems[1]-quantity;
+
+
+                }
+                else if(choice==3)
+                {
+
+                        foodItems[2] = foodItems[2]-quantity;
+
+
+
+                }
+                else
+                {
+                        printf("Error Input");
+                        break;
+                }
+
+                if(foodItems[0] ==0 && foodItems[1]==0 && foodItems[2] == 0)
+                {
+                    break;
+                }
+
+                printf("Remaining Inventry: ");
+
+                for(int i=0;i<3;i++)
+                {
+                        printf("%d ", foodItems[i]);
+                }
+                printf("\n\n\n");
         }
-
-        
-
+         printf("WE ARE CLOSED!! ");
 
 
-        
 
 
 
@@ -121,13 +120,13 @@ int main()
         //         scanf("%d",quantity);
 
         //         if(choice==1)
-        //         {                       
+        //         {
 
         //                 a[0] = a[0]-quantity;
         //         }
         //         else if(choice==2)
         //         {
-                        
+
         //                 a[1] = a[1]-quantity;
         //         }
         //         else if(choice==3)
@@ -152,29 +151,8 @@ int main()
         // {
         //         printf("%s\n",itemList[i]);
         // }
-        
-        
-
-        
-                
 
 
-
-
-        
-
-
-        
-        
-
-       
-
-
-        
-
-        
-
-        
 
 //-----------String Array 2D--------------------
         // char a[10][20];
@@ -188,4 +166,28 @@ int main()
         //         printf("%s\n", a[i]);
         // }
 
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
